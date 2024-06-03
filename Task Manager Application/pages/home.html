@@ -1,0 +1,41 @@
+<div class="HomeMain">
+    <div class="Home AddTask">
+        <div class="addingTamplate">
+            <div class="addingSectionOne">
+                <input type="text" id="task" name="add task"
+                    placeholder="Type your task name." />
+            </div>
+            <div class="addingSectionTwo">
+
+                <div class="sectionTwo_1">
+                    <select id="priority">
+                        <option value="priority" selected disabled
+                            aria-autocomplete="none">priority</option>
+                        <option value="low">Low</option>
+                        <option value="midium">Midium</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+
+                <div class="sectionTwo_2">
+                    <button type="submit" onclick="handleData()">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Home showAddedData">
+       <div class="homeTitle"> <h2>List Of Task.</h2></div>
+        <table id="tableOne">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>

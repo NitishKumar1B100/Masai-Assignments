@@ -1,0 +1,44 @@
+<div class="mainDeletedTask">
+    <div class="deletedBox">
+        <div class="deletedTitle">
+            <h1>Deleted Task</h1>
+        </div>
+        <div class="EditDeletedData">
+
+            <div class="deleted_priority deletedSec">
+                <p>Priority</p>
+                <select id="deleted_priority" onchange="handleFilter()">
+                    <option value="null" selected>None</option>
+                    <option value="low">Low</option>
+                    <option value="midium">Midium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+
+            <div class="deleted_status deletedSec">
+                <p>Status</p>
+                <select id="deleted_status" onchange="handleFilter()">
+                    <option value="null" selected>None</option>
+                    <option value="pending">Pending</option>
+                    <option value="in-progress">In-Process</option>
+                    <option value="complete">Complete</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="deletedDataBox">
+            <table id="showDeletedData">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Priority</th>
+                        <th>Status</th>
+                        <th>Restore</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+</div>
